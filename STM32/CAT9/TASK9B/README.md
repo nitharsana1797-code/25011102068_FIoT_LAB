@@ -1,11 +1,33 @@
-# TASK9B — STM32 UART practical
+# Task 9B – UART-Based LED Control
 
-Individual task folder for TASK9B under CAT 9.
+## Overview
+This task demonstrates controlling the onboard LED of the STM32F103C8T6 (Blue Pill) using commands received through UART communication.
 
-**Target board:** STM32F103C8T6 (Blue Pill), based on the supplied CAT 9 project configuration.
+## Configuration
+- **Board:** STM32F103C8T6 (Blue Pill)
+- **Peripheral:** USART2
+- **Baud Rate:** 115200
+- **Format:** 8-N-1
+- **TX Pin:** PA2
+- **RX Pin:** PA3
+- **LED Pin:** PC13 (Onboard LED, Active-LOW)
 
-**Task source:** `Core/Src/main.c` contains the corresponding source from the original `Task_Source_Codes` collection. The original source collection remains preserved under `TASK9A/Task_Source_Codes/`.
+## Circuit Diagram
 
-**Project files:** `.ioc`, `.mxproject`, `Core/`, `Drivers/`, `MDK-ARM/`, Keil project and startup assembly are included from the CAT 9 project scaffold. Verify UART pin/peripheral settings against this task's requirements before rebuilding.
+![CAT9B UART Circuit](circuit.png)
 
-**Circuit diagram:** The original CAT 9 UART diagram is retained; no diagram from another CAT has been substituted.
+## Supported Commands
+
+| Command | Function |
+|---|---|
+| `LED ON` | Turns ON the LED |
+| `LED OFF` | Turns OFF the LED |
+| `LED TOGGLE` | Toggles the LED |
+| `HELP` | Displays available commands |
+
+Commands are entered through a serial terminal (PuTTY / Tera Term), and the STM32 processes them and sends back corresponding responses.
+
+## Software Used
+- STM32CubeMX
+- Keil MDK
+- PuTTY / Tera Term
