@@ -1,4 +1,4 @@
-# CAT5 – TASK A: UART Initialization and Character Transmission
+# CAT6 – TASK A: UART Initialization and Character Transmission
 
 ## Objective
 Configure the AT89S52 UART for 9600-8-N-1 and continuously transmit `Hello from 8051` to a PC terminal such as PuTTY.
