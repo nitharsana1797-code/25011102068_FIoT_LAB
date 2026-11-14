@@ -1,11 +1,40 @@
-# TASK8C — STM32 GPIO practical
+# TASK 8C – Short Press and Long Press LED Control
 
-Individual task folder for TASK8C under CAT 8.
+## 1. Aim
+To implement short-press and long-press detection using an STM32 Blue Pill, controlling LED toggling and blinking based on button press duration.
 
-**Target board:** STM32F103C8T6 (Blue Pill), based on the supplied CAT 8 project configuration.
+## 2. Hardware Components
+- STM32F103C8T6 (Blue Pill)
+- Push Button (Normally Open)
+- Red LED
+- 330 Ω Resistor
+- Jumper Wires
 
-**Task source:** `Core/Src/main.c` contains the corresponding task source copied from the original `Task_Source_Codes` folder. The original source-code collection is retained in `TASK8A/Task_Source_Codes/`.
+## 3. Circuit Diagram
 
-**Project files:** `.ioc`, `.mxproject`, `Core/`, `Drivers/`, `MDK-ARM/`, Keil project and startup assembly are included using the CAT 8 project scaffold. Check pin/peripheral settings against the task circuit before rebuilding.
+![CAT8 Circuit Diagram](circuit.png)
 
-**Circuit diagram:** The CAT 8 diagram supplied with the original project is retained; no diagram from another CAT has been substituted.
+## 4. Pin Connections
+
+| STM32 Pin | Connection |
+|---|---|
+| PA0 | Push Button Input |
+| PA3 | LED Output |
+| GND | Common Ground |
+
+PA0 is configured with an internal pull-up resistor, and PA3 is configured as a push-pull output.
+
+## 5. Working Principle
+
+The LED behaviour depends on how long the push button is pressed.
+
+- **Short Press (< 1 second):** Toggles the LED.
+- **Long Press (≥ 1 second):** Starts continuous LED blinking.
+- **Short Press during blinking:** Stops blinking and turns the LED OFF.
+- **Another Long Press:** Restarts blinking.
+
+A 30 ms software debounce mechanism ensures reliable button detection. The LED blinking is implemented using `HAL_GetTick()` without blocking delays.
+
+## 6. Result
+
+The STM32 successfully distinguishes between short and long button presses and controls the LED accordingly.
