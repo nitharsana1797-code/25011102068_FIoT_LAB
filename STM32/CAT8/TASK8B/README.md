@@ -11,7 +11,7 @@ To implement event-based LED control using a push button and STM32 GPIO, prevent
 - Jumper Wires
 
 ## 3. Circuit Diagram
-![CAT8 Circuit Diagram](../CAT8_LED_Blink_circuit.png)
+![CAT8 Circuit Diagram](Circuit.png)
 
 ## 4. Pin Connections
 
