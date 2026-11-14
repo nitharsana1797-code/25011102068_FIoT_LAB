@@ -12,13 +12,10 @@ Configure Timer0 in 16-bit mode to generate approximately 1 ms interrupts and bu
 - Reload = 65536 − 922 = 64614 = `FC66H` (approximate).
 - ISR reloads TH0/TL0 and increments a software tick counter.
 
-## Circuit diagram
-![Timer0 LED circuit](./circuit_diagram.svg)
-
 LED assumed on P1.0 active-low. Include/verify the board crystal and reset circuit; the timer itself needs no external timer component.
 
 ## Verification
 Use an oscilloscope/logic analyzer or observe LED toggling. Timer interrupt accuracy depends on actual crystal and interrupt latency.
 
-## Circuit
+## Circuit diagram
 ![Circuit diagram](circuit.png)
