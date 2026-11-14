@@ -13,6 +13,9 @@ The lab sheet asks students to investigate the ESP8266 AT-command interface and 
 | Establish a TCP connection | `AT+CIPSTART="TCP","host",port` | Opens a TCP connection to a server |
 | Send application data | `AT+CIPSEND=length` | Enters data-send mode for the specified number of bytes |
 
+## Circuit diagram
+![Circuit Diagram](circuit.png)
+
 ## Suggested investigation procedure
 
 1. Connect the STM32 and Wemos UART pins as shown in `../circuit.png`.
