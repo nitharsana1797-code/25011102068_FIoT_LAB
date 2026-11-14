@@ -42,6 +42,9 @@ Use a 3.3 V-compatible BME280 breakout. Many breakout boards include I2C pull-up
 - Baud rate: 115200, 8 data bits, no parity, 1 stop bit.
 - On common NUCLEO configurations USART2 is connected to the ST-LINK virtual COM port. Confirm your board revision and jumper/solder-bridge configuration.
 
+## Circuit diagram
+![Circuit Diagram](circuit.png)
+
 ## Bosch driver placement (as specified by the CAT PDF)
 - `bme280.c` belongs in the project source folder / Keil source group.
 - `bme280.h` and `bme280_defs.h` belong in the include folder.
