@@ -1,4 +1,4 @@
-# TASK2 – Human-Machine Interface using Matrix Keypad, LEDs, and Seven-Segment Display
+# TASK1 – Human-Machine Interface using Matrix Keypad, LEDs, and Seven-Segment Display
 
 ## Objective
 Read a numeric key from a matrix keypad, display the key on a seven-segment display, and execute its associated LED operation.
@@ -32,9 +32,6 @@ The task asks for separate functions: `keypad_scan()`, `display_digit(unsigned c
 
 **These are example assignments, not confirmed board wiring.** Common-anode displays require inverted segment patterns. P0 needs external pull-ups. If the keypad layout differs, edit `keymap`.
 
-## Circuit diagram
-![Keypad, LEDs and seven-segment circuit](./circuit_diagram.svg)
-
 This is a simplified wiring diagram. Confirm actual pin mappings, display type, current-limiting resistors, digit common, and board connections before use.
 
 ## Build and test
@@ -46,5 +43,5 @@ This is a simplified wiring diagram. Confirm actual pin mappings, display type, 
 ## Limitations
 The activity functions are blocking; keypad scanning pauses while an LED pattern runs. The delay is approximate and depends on clock/compiler. A non-blocking timer-based design is preferable if the assessment expects keypad responsiveness during patterns.
 
-## Circuit
+## Circuit diagram
 ![Circuit diagram](circuit.png)
