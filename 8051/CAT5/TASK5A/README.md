@@ -1,4 +1,4 @@
-# TASK1 – Hardware Timer and Interrupt-Based Time Base
+# TASK5A – Hardware Timer and Interrupt-Based Time Base
 
 ## Objective
 Configure Timer0 in 16-bit mode to generate approximately 1 ms interrupts and build a 1-second software time base without software delay loops.
