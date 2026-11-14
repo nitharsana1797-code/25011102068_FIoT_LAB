@@ -31,6 +31,9 @@ Do not publish real Wi-Fi credentials in a public repository.
 
 The supplied project clock configuration expects an 8 MHz external clock input (HSE bypass), as recorded in the original CubeMX configuration. Confirm the board's clock source before changing the clock setup.
 
+## Circuit diagram
+![Circuit Diagram](circuit.png)
+
 ## Testing
 
 1. Build and flash the STM32F410 project.
