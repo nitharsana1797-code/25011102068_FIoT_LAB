@@ -1,4 +1,4 @@
-# TASK2 – Software PWM LED Fading and Variable-Frequency Wave
+# TASK5B – Software PWM LED Fading and Variable-Frequency Wave
 
 ## Objective
 Use timer interrupts (not delay loops) to fade an LED with software PWM and generate a selectable square-wave output.
