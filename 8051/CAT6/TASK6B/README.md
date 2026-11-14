@@ -1,4 +1,4 @@
-# CAT5 – TASK B: Interrupt-Driven UART Echo
+# CAT6 – TASK B: Interrupt-Driven UART Echo
 
 ## Objective
 Receive characters from PuTTY using the UART interrupt, store them in an RX ring buffer, and echo each character back to the PC.
