@@ -1,6 +1,6 @@
 # CAT 11 — HTTP Connection using Wemos ESP8266
 
-This is the HTTP-server continuation of the Wemos/ESP8266 work. It is kept as **Task 10** separately from Tasks 9A–9C, following the numbering distinction in the class announcement.
+This is the HTTP-server continuation of the Wemos/ESP8266 work. It is kept as **CAT 11** separately from CAT 10A–10C, following the numbering distinction in the class announcement.
 
 ## What the supplied firmware does
 
