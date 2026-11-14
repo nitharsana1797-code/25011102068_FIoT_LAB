@@ -12,9 +12,6 @@ Configure the AT89S52 UART for 9600-8-N-1 and continuously transmit `Hello from 
 - `SBUF` is the transmit data register; `TI` indicates transmit completion.
 - Pins: TXD=P3.1 (physical pin 11); RXD=P3.0 (physical pin 10).
 
-## Circuit diagram
-![UART USB-TTL circuit](./circuit_diagram.svg)
-
 ## PuTTY setup
 1. Connect USB-TTL adapter TXD to MCU RXD, adapter RXD to MCU TXD, and GND to GND.
 2. Select the adapter's COM port in PuTTY (Serial).
@@ -23,5 +20,5 @@ Configure the AT89S52 UART for 9600-8-N-1 and continuously transmit `Hello from 
 
 **Use a TTL UART adapter, not a true RS-232 port.** Verify voltage compatibility and board pin labels.
 
-## Circuit
+## Circuit diagram
 ![Circuit diagram](circuit.png)
