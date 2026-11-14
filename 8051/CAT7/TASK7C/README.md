@@ -8,7 +8,7 @@ To develop an interactive LCD application in which a character moves across a 16
 
 This task uses the LCD interface along with a 4×4 matrix keypad.
 
-![Circuit Diagram](some-image-path.png)
+![Circuit Diagram](circuit.png)
 
 ## 3. Core Logic / Working Principle
 
