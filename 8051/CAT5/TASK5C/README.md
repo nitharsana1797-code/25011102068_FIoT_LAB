@@ -6,9 +6,6 @@ Use a timer interrupt as a non-blocking time base to advance a stepper motor seq
 ## Files
 - `main.c` – timer-driven step event and example 4-step output sequence.
 
-## Circuit diagram
-![Stepper driver wiring](./circuit_diagram.svg)
-
 ## Important safety/hardware note
 Never drive a stepper motor directly from AT89S52 GPIO. Use a suitable driver (e.g., ULN2003 for a unipolar motor or a suitable H-bridge/driver), external motor supply, and common ground. The exact motor/driver and pinout must be confirmed before wiring.
 
