@@ -1,4 +1,4 @@
-# CAT 11 — Task A — On-board LED Bring-Up
+# CAT 12 — Task A — On-board LED Bring-Up
 
 ## Actual board used in the laboratory
 **NUCLEO-F410RB — STM32F410RB (Cortex-M4)**
