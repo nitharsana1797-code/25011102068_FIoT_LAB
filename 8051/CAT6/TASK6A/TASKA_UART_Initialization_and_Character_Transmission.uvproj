@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Project xmlns="http://www.keil.com/pack" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SchemaVersion>2.1</SchemaVersion>
+  <Header>### Keil uVision Project, generated starter configuration ###</Header>
+  <Targets>
+    <Target>
+      <TargetName>TASKA_UART_Initialization_and_Character_Transmission</TargetName>
+      <ToolsetNumber>0x0</ToolsetNumber>
+      <ToolsetName>8051</ToolsetName>
+      <TargetOption>
+        <TargetCommonOption>
+          <Device>AT89S52</Device><Vendor>Atmel</Vendor><Cpu>IRAM(0x0-0x7F) XRAM(0x0-0x0) CODE(0x0-0xFFFF)</Cpu>
+          <OutputDirectory>.\Objects\</OutputDirectory><OutputName>TASKA_UART_Initialization_and_Character_Transmission</OutputName><CreateExecutable>1</CreateExecutable><CreateHexFile>1</CreateHexFile>
+        </TargetCommonOption>
+        <C51>
+          <Target51><MemoryModel>0</MemoryModel><CodeROMSize>0</CodeROMSize><DataRAMSize>0</DataRAMSize><UseOnchipROM>1</UseOnchipROM><UseOnchipRAM>1</UseOnchipRAM></Target51>
+          <C51Misc><UseInterruptVector>1</UseInterruptVector></C51Misc>
+        </C51>
+      </TargetOption>
+      <Groups><Group><GroupName>Source Group 1</GroupName><Files>
+<File><FileName>main.c</FileName><FileType>1</FileType><FilePath>.\main.c</FilePath></File><File><FileName>STARTUP.A51</FileName><FileType>2</FileType><FilePath>.\STARTUP.A51</FilePath></File></Files></Group></Groups></Target></Targets></Project>
