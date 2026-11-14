@@ -1,4 +1,4 @@
-# TASKD – Four LED, Four Mode Controller
+# TASK1 – Four LED, Four Mode Controller
 
 ## Objective
 Implement a register-level GPIO controller using bare-metal C: four LEDs as outputs and one push-button as input. Each debounced button press advances the mode exactly once.
