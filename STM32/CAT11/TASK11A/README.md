@@ -1,4 +1,4 @@
-# Task 10 — HTTP Connection using Wemos ESP8266
+# Task 11 — HTTP Connection using Wemos ESP8266
 
 This is the HTTP-server continuation of the Wemos/ESP8266 work. It is kept as **Task 10** separately from Tasks 9A–9C, following the numbering distinction in the class announcement.
 
