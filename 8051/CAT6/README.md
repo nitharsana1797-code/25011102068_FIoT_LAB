@@ -1,16 +1,35 @@
-# 8051 — CAT 6
-## Task index
-- [TASK6A](TASK6A/README.md)
-- [TASK6B](TASK6B/README.md)
+# CAT 6 – UART Communication using 8051
 
-All original files and additional supplied materials are retained.
+## Overview
+This practical introduces serial communication using the Universal Asynchronous Receiver Transmitter (UART) available in the AT89S52 microcontroller.
 
----
-
-# 8051 – CAT5
+The experiments demonstrate character transmission and interrupt-driven reception between the microcontroller and a computer using a serial terminal.
 
 ## Experiments
-- [TASK A – UART Initialization and Character Transmission](TASKA_UART_Initialization_and_Character_Transmission/README.md)
-- [TASK B – Interrupt-Driven UART Echo](TASKB_UART_Interrupt_Driven_Echo/README.md)
 
-Task names follow the supplied UART Driver and Serial Debugging handout.
+### TASK 6A – UART Initialization and Character Transmission
+Configure the 8051 UART in Mode 1 for asynchronous serial communication. Timer 1 is configured to generate the required baud rate, and characters are transmitted through the serial port.
+
+The transmitted message can be viewed using a terminal application such as PuTTY.
+
+### TASK 6B – Interrupt-Driven UART Echo
+Implement UART reception using serial interrupts. Received characters are stored in a circular buffer and transmitted back to the computer, demonstrating an interrupt-driven echo mechanism.
+
+## Concepts Covered
+- UART configuration
+- Serial communication
+- Baud-rate generation
+- Timer 1 in auto-reload mode
+- Serial data transmission and reception
+- UART interrupts
+- Circular buffer implementation
+
+## Hardware and Software
+- AT89S52 Microcontroller
+- USB-to-TTL Serial Adapter
+- 8051 Development Board
+- Computer with PuTTY or equivalent serial terminal
+- Keil µVision IDE
+
+## Expected Outcome
+The microcontroller successfully transmits serial messages to a computer and receives and echoes incoming characters, demonstrating UART communication and interrupt-based serial data handling.
