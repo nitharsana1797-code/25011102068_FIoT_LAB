@@ -1,4 +1,4 @@
-# CAT 12 — BME280 Sensor Interfacing (NUCLEO-F410RB)
+# CAT 13 — BME280 Sensor Interfacing (NUCLEO-F410RB)
 
 ## Board choice
 This package targets **STM32 NUCLEO-F410RB (STM32F410RB)**, matching the board used in your laboratory. Do not change the project target to STM32F401RE just because a CAT handout or template mentions another variant.
