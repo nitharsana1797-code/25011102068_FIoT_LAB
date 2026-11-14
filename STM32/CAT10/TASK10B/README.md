@@ -1,4 +1,4 @@
-# Task 9B — ESP8266 AT Command Investigation
+# Task 10B — ESP8266 AT Command Investigation
 
 The lab sheet asks students to investigate the ESP8266 AT-command interface and record the command used for each operation. This task is therefore documented as an investigation table, not as a separate ready-made firmware program.
 
