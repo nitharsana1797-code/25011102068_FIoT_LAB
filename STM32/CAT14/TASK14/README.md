@@ -1,4 +1,4 @@
-# CAT 13 — BME280 Sensor Interfacing using I2C and MQTT
+# CAT 14 — BME280 Sensor Interfacing using I2C and MQTT
 
 **Board:** NUCLEO-F410RB (STM32F410RB)  
 **Sensor:** BME280  
@@ -47,6 +47,9 @@ The code uses `BME280_I2C_ADDR_PRIM` (normally 0x76). If SDO is tied HIGH, chang
 UART settings: 115200 baud, 8 data bits, no parity, 1 stop bit. The ESP8266 AT firmware baud rate must match.
 
 **Power warning:** ESP8266 is a 3.3 V device. Do not connect its VCC or UART pins to 5 V. Use a stable 3.3 V supply capable of handling Wi-Fi current peaks, and connect the STM32 and ESP8266 grounds together.
+
+## Circuit diagram
+![Circuit Diagram](circuit.png)
 
 ## Keil / STM32 project integration
 
