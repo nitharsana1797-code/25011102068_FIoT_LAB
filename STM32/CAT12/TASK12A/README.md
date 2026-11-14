@@ -34,5 +34,8 @@ This follows the 100 MHz clock configuration shared for the NUCLEO-F410RB experi
 4. Replace the generated project's `main.c` with this task's `main.c`.
 5. Build, flash the NUCLEO-F410RB, and test the task.
 
+## Circuit diagram
+![Circuit Diagram](circuit.png)
+
 ## Compatibility note
 Do not select STM32F401RE just because the CAT PDF names it. This package targets the actual NUCLEO-F410RB used in the experiment. The F410RB and F401RE are different MCU variants; use the matching device selection and startup/HAL configuration.
