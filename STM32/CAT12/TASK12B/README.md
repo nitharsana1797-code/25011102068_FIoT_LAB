@@ -1,4 +1,4 @@
-# CAT 11 — Task B — On-board Switch Control with State Remembrance
+# CAT 12 — Task B — On-board Switch Control with State Remembrance
 
 ## Actual board used in the laboratory
 **NUCLEO-F410RB — STM32F410RB (Cortex-M4)**
@@ -25,7 +25,7 @@ This follows the 100 MHz clock configuration shared for the NUCLEO-F410RB experi
 
 ## Files
 - `main.c` — complete HAL application source for this task.
-- `circuit_diagram.png` — reference diagram showing the on-board LED and user button.
+- `circuit.png` — reference diagram showing the on-board LED and user button.
 
 ## Build instructions
 1. Open/create a STM32CubeIDE or Keil project for **STM32F410RB**.
@@ -33,6 +33,9 @@ This follows the 100 MHz clock configuration shared for the NUCLEO-F410RB experi
 3. Configure the clock as described above (or generate the equivalent configuration in CubeMX).
 4. Replace the generated project's `main.c` with this task's `main.c`.
 5. Build, flash the NUCLEO-F410RB, and test the task.
+
+## Circuit diagram
+![Circuit Diagram](circuit.png)
 
 ## Compatibility note
 Do not select STM32F401RE just because the CAT PDF names it. This package targets the actual NUCLEO-F410RB used in the experiment. The F410RB and F401RE are different MCU variants; use the matching device selection and startup/HAL configuration.
